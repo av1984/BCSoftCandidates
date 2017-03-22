@@ -1,0 +1,198 @@
+[
+  {
+    "CandidateID": 1,
+    "CandidateName": "Орлов Д.",
+    "UnitsInStock": 39,
+    "UnitsOnOrder": 10,
+    "UnitPrice": 8,
+    "DirectionID": 1,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(1)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 2,
+    "CandidateName": "Бурмистров А.",
+    "UnitsInStock": 0,
+    "UnitsOnOrder": 7,
+    "UnitPrice": 6,
+    "DirectionID": 1,
+    "Discontinued": true,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(2)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 3,
+    "CandidateName": "Зайцев Н.",
+    "UnitsInStock": 100,
+    "UnitsOnOrder": 6,
+    "UnitPrice": 3,
+    "DirectionID": 3,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(3)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 4,
+    "CandidateName": "Кузнецов Е.",
+    "UnitsInStock": 2,
+    "UnitsOnOrder": 3,
+    "UnitPrice": 19,
+    "DirectionID": 3,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(4)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 5,
+    "CandidateName": "Трямкин Н.",
+    "UnitsInStock": 0,
+    "UnitsOnOrder": 9,
+    "UnitPrice": 108,
+    "DirectionID": 3,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(5)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 6,
+    "CandidateName": "Бучневич П.",
+    "UnitsInStock": 21,
+    "UnitsOnOrder": 0,
+    "UnitPrice": 18,
+    "DirectionID": 4,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(6)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 7,
+    "CandidateName": "Наместников В.",
+    "UnitsInStock": 25,
+    "UnitsOnOrder": 25,
+    "UnitPrice": 18,
+    "DirectionID": 5,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(7)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 8,
+    "CandidateName": "Сошников Н.",
+    "UnitsInStock": 29,
+    "UnitsOnOrder": 7,
+    "UnitPrice": 35,
+    "DirectionID": 6,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(8)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 9,
+    "CandidateName": "Тарасенко В.",
+    "UnitsInStock": 4,
+    "UnitsOnOrder": 32,
+    "UnitPrice": 35,
+    "DirectionID": 6,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(9)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 10,
+    "CandidateName": "Нестеров Н.",
+    "UnitsInStock": 40,
+    "UnitsOnOrder": 0,
+    "UnitPrice": 130,
+    "DirectionID": 5,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(10)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 11,
+    "CandidateName": "Василевский А.",
+    "UnitsInStock": 4,
+    "UnitsOnOrder": 10,
+    "UnitPrice": 13,
+    "DirectionID": 4,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(11)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 13,
+    "CandidateName": "Григоренко М.",
+    "UnitsInStock": 36,
+    "UnitsOnOrder": 40,
+    "UnitPrice": 56,
+    "DirectionID": 3,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(13)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 14,
+    "CandidateName": "Задоров Н.",
+    "UnitsInStock": 0,
+    "UnitsOnOrder": 40,
+    "UnitPrice": 7,
+    "DirectionID": 2,
+    "Discontinued": false,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(14)/Direction"
+      }
+    }
+  },
+  {
+    "CandidateID": 15,
+    "CandidateName": "Тютин Ф.",
+    "UnitsInStock": 90,
+    "UnitsOnOrder": 20,
+    "UnitPrice": 75,
+    "DirectionID": 2,
+    "Discontinued": true,
+    "Direction": {
+      "__deferred": {
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(15)/Direction"
+      }
+    }
+  }
+]
