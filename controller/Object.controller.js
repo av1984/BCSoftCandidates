@@ -77,7 +77,7 @@ sap.ui.define([
 		 * @private
 		 */
 		_onObjectMatched: function(oEvent) {
-			var sObjectPath = "/Products(" + oEvent.getParameter("arguments").objectId + ")";
+			var sObjectPath = "/Candidates(" + oEvent.getParameter("arguments").objectId + ")";
 			this._bindView(sObjectPath);
 		},
 
@@ -123,7 +123,7 @@ sap.ui.define([
 
 			var oResourceBundle = this.getResourceBundle(),
 				oObject = oView.getBindingContext().getObject(),
-				sObjectId = oObject.ProductID,
+				sObjectId = oObject.CandidateID,
 				sObjectName = oObject.ProductName;
 
 			// Everything went fine.

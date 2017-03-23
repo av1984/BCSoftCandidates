@@ -15,8 +15,8 @@
 			<ObjectHeader
 				id="objectHeader"
 				responsive="true"
-				intro="{ProductID}"
-				title="{ProductName}"
+				intro="{CandidateID}"
+				title="{CandidateName}"
 				numberUnit="PC"
 				numberState="Success"
 				number="{

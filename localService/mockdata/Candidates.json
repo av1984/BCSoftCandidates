@@ -9,7 +9,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(1)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(1)/Direction"
       }
     }
   },
@@ -23,7 +23,7 @@
     "Discontinued": true,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(2)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(2)/Direction"
       }
     }
   },
@@ -37,7 +37,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(3)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(3)/Direction"
       }
     }
   },
@@ -51,7 +51,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(4)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(4)/Direction"
       }
     }
   },
@@ -65,7 +65,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(5)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(5)/Direction"
       }
     }
   },
@@ -79,7 +79,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(6)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(6)/Direction"
       }
     }
   },
@@ -93,7 +93,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(7)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(7)/Direction"
       }
     }
   },
@@ -107,7 +107,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(8)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(8)/Direction"
       }
     }
   },
@@ -121,7 +121,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(9)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(9)/Direction"
       }
     }
   },
@@ -135,7 +135,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(10)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(10)/Direction"
       }
     }
   },
@@ -149,7 +149,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(11)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(11)/Direction"
       }
     }
   },
@@ -163,7 +163,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(13)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(13)/Direction"
       }
     }
   },
@@ -177,7 +177,7 @@
     "Discontinued": false,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(14)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(14)/Direction"
       }
     }
   },
@@ -191,7 +191,7 @@
     "Discontinued": true,
     "Direction": {
       "__deferred": {
-        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(15)/Direction"
+        "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Candidates(15)/Direction"
       }
     }
   }

@@ -52,15 +52,16 @@
 				width="auto"
 				mode="MultiSelect"
 				items="{
-					path: '/Products',
+					path: '/Candidates',
 					sorter: {
-						path: 'ProductName',
+						path: 'CandidateName',
 						descending: false
 					},
 					parameters: {
-						'expand': 'Supplier'
+						'expand': 'Direction'
 					}
 				}">
+				<!--  -->
 				<headerToolbar>
 					<Toolbar>
 						<Title
@@ -81,7 +82,7 @@
 							text="ФИО кандидата"/>
 					</Column>
 					<Column
-						id="supplierNameColumn"
+						id="directionNameColumn"
 						demandPopin="false"
 						minScreenWidth="Tablet">
         				<Text text="Направление"/>
@@ -92,14 +93,15 @@
         				<Text text="Какой-нибудь параметр"/>
     				</Column>
 				</columns>
+				
 				<items>
 					<ColumnListItem
 						press="onPress"
 						type="Navigation">
 						<cells>
 							<ObjectIdentifier
-								title="{ProductName}"/>
-							<Text text = "{Supplier/CompanyName}"/>
+								title="{CandidateName}"/>
+							<Text text = "{Direction/CompanyName}"/>
 							<!-- unit="ч." -->
 							<ObjectNumber
 								number="{UnitsInStock}" 

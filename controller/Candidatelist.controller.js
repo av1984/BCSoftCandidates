@@ -22,14 +22,16 @@ sap.ui.define([
 		 * @public
 		 */
 		onInit: function() {
+			
 			var oViewModel,
 				iOriginalBusyDelay,
 				oTable = this.byId("table");
-
+			
 			// Put down worklist table's original value for busy indicator delay,
 			// so it can be restored later on. Busy handling on the table is
 			// taken care of by the table itself.
 			iOriginalBusyDelay = oTable.getBusyIndicatorDelay();
+			
 			this._oTable = oTable;
 			// keeps the search state
 			this._oTableSearchState = [];
@@ -92,14 +94,14 @@ sap.ui.define([
 				sTitle = this.getResourceBundle().getText("worklistTableTitleCount", [iTotalItems]);
 
 				// Get the count for all the products and set the value to 'countAll' property
-				this.getModel().read("/Products/$count", {
+				this.getModel().read("/Candidates/$count", {
 					success: function (oData) {
 						oViewModel.setProperty("/countAll", oData);
 					}
 				});
 
 				// read the count for the unitsInStock filter
-				this.getModel().read("/Products/$count", {
+				this.getModel().read("/Candidates/$count", {
 					success: function (oData) {
 						oViewModel.setProperty("/inStock", oData);
 					},
@@ -107,7 +109,7 @@ sap.ui.define([
 				});
 
 				// read the count for the outOfStock filter
-				this.getModel().read("/Products/$count", {
+				this.getModel().read("/Candidates/$count", {
 					success: function(oData){
 						oViewModel.setProperty("/outOfStock", oData);
 					},
@@ -115,7 +117,7 @@ sap.ui.define([
 				});
 
 				// read the count for the shortage filter
-				this.getModel().read("/Products/$count", {
+				this.getModel().read("/Candidates/$count", {
 					success: function(oData){
 						oViewModel.setProperty("/shortage", oData);
 					},
@@ -165,7 +167,7 @@ sap.ui.define([
 				var sQuery = oEvent.getParameter("query");
 
 				if (sQuery && sQuery.length > 0) {
-					oTableSearchState = [new Filter("ProductName", FilterOperator.Contains, sQuery)];
+					oTableSearchState = [new Filter("CandidateName", FilterOperator.Contains, sQuery)];
 				}
 				this._applySearch(oTableSearchState);
 			}
@@ -193,7 +195,7 @@ sap.ui.define([
 		 */
 		_showObject: function(oItem) {
 			this.getRouter().navTo("object", {
-				objectId: oItem.getBindingContext().getProperty("ProductID")
+				objectId: oItem.getBindingContext().getProperty("CandidateID")
 			});
 		},
 
@@ -314,7 +316,7 @@ sap.ui.define([
 					oProductObject = aSelectedProducts[i].getBindingContext().getObject();
 					oProductObject.UnitsInStock += 10;
 					this.getModel().update(sPath, oProductObject, {
-						success : this._handleReorderActionResult.bind(this, oProductObject.ProductID, true, i+1, aSelectedProducts.length),
+						success : this._handleReorderActionResult.bind(this, oProductObject.CandidateID, true, i+1, aSelectedProducts.length),
 						error : this._handleReorderActionResult.bind(this, oProductObject.ProductID, false, i+1, aSelectedProducts.length)
 					});
 				}

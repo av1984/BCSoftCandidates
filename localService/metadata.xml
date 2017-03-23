@@ -14,7 +14,7 @@
 				<Property Name="UnitsInStock" Type="Edm.Int16" Nullable="true" />
 				<Property Name="UnitsOnOrder" Type="Edm.Int16" Nullable="true" />
 				<Property Name="Discontinued" Type="Edm.Boolean" Nullable="false" />
-				<NavigationProperty Name="Direction" Relationship="NorthwindModel.FK_Candidates_Suppliers" FromRole="Candidates" ToRole="Directions" />
+				<NavigationProperty Name="Direction" Relationship="NorthwindModel.FK_Candidates_Directions" FromRole="Candidates" ToRole="Directions" />
 			</EntityType>
 
 			<EntityType Name="Direction">
@@ -30,7 +30,7 @@
 				<Property Name="Region" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
 				<Property Name="PostalCode" Type="Edm.String" Nullable="true" MaxLength="10" Unicode="true" FixedLength="false" />
 				<Property Name="Country" Type="Edm.String" Nullable="true" MaxLength="15" Unicode="true" FixedLength="false" />
-				<NavigationProperty Name="Candidates" Relationship="NorthwindModel.FK_Candidates_Suppliers" FromRole="Directions" ToRole="Candidates" />
+				<NavigationProperty Name="Candidates" Relationship="NorthwindModel.FK_Candidates_Directions" FromRole="Directions" ToRole="Candidates" />
 			</EntityType>
 
 			<Association Name="FK_Candidates_Directions">

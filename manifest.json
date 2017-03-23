@@ -95,7 +95,7 @@
 					"target": "candidatelist"
 				},
 				{
-					"pattern": "Products/{objectId}",
+					"pattern": "Candidates/{objectId}",
 					"name": "object",
 					"target": "object"
 				}
