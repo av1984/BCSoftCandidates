@@ -26,17 +26,25 @@ sap.ui.define([
 		 * @returns {sap.ui.core.ValueState} the value state for the stock level
 	 	*/
 		quantityState: function(iValue) {
-			/*
-			if (iValue === 0) {
+			if (iValue == 0) {
 				return ValueState.Error;
-			} else 
-				*/
-			if (iValue <= 4) {
+			} else if (iValue == 2) {
 				return ValueState.Success;
 			} else {
 				return ValueState.Warning;
 			}
-        }
+
+        },
+		
+		quantityStateText: function(iValue) {
+			if (iValue == 0) {
+				return 'Не подходит';
+			} else if (iValue == 2) {
+				return 'Подходит';
+			} else {
+				return 'Думаем';
+			}
+        }		
 
 	};
 

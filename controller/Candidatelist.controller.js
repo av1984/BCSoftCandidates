@@ -54,9 +54,9 @@ sap.ui.define([
 
 			// Create an object of filters
 			this._mFilters = {
-				"inStock": [new sap.ui.model.Filter("UnitsInStock", "LE", 0)],
-				"outOfStock": [new sap.ui.model.Filter("UnitsInStock", "GT", 4)],
-				"shortage": [new sap.ui.model.Filter("UnitsInStock", "BT", 1, 4)],
+				"Fail": [new sap.ui.model.Filter("UnitsInStock", "EQ", 0)],
+				"Doubt": [new sap.ui.model.Filter("UnitsInStock", "EQ", 1)],
+				"Ready": [new sap.ui.model.Filter("UnitsInStock", "EQ", 2)],
 				"all": []
 			};
 

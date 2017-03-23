@@ -22,22 +22,22 @@
 						text="кандидатов"/>
 					<IconTabSeparator/>
 					<IconTabFilter
-						key="inStock"
+						key="Ready"
 						icon="sap-icon://message-success"
 						iconColor="Positive"
-						count="{worklistView>/inStock}"
+						count="{worklistView>/Ready}"
 						text="Берём"/>
 					<IconTabFilter
-						key="shortage"
+						key="Doubt"
 						icon="sap-icon://message-warning"
 						iconColor="Critical"
-						count="{worklistView>/shortage}"
+						count="{worklistView>/Doubt}"
 						text="Думаем"/>
 					<IconTabFilter
-						key="outOfStock"
+						key="Fail"
 						icon="sap-icon://message-error"
 						iconColor="Negative"
-						count="{worklistView>/outOfStock}"
+						count="{worklistView>/Fail}"
 						text="Не подходят"/>
 				</items>
 			</IconTabBar>
@@ -47,7 +47,7 @@
 				class="sapUiResponsiveMargin sapUiNoMarginTop"
 				growing="true"
 				growingScrollToLoad="true"
-				noDataText="{worklistView>/tableNoDataText}"
+				noDataText="Кандидатов не найдено"
 				updateFinished="onUpdateFinished"
 				width="auto"
 				mode="MultiSelect"
@@ -66,7 +66,7 @@
 					<Toolbar>
 						<Title
 							id="tableHeader"
-							text="{worklistView>/worklistTableTitle}"/>
+							text="Кандидаты"/>
 						<ToolbarSpacer/>
 						<SearchField
 							id="searchField"
@@ -90,7 +90,7 @@
 
 					<Column id="unitsInStockColumn"
             			hAlign="Right">
-        				<Text text="Какой-нибудь параметр"/>
+        				<Text text="Соответствие"/>
     				</Column>
 				</columns>
 				
@@ -101,11 +101,14 @@
 						<cells>
 							<ObjectIdentifier
 								title="{CandidateName}"/>
-							<Text text = "{Direction/CompanyName}"/>
+							<Text text = "{DirectionName}"/>
 							<!-- unit="ч." -->
 							<ObjectNumber
-								number="{UnitsInStock}" 
-								 unit=""
+								number="{
+									path: 'UnitsInStock',
+									formatter: '.formatter.quantityStateText'
+								}" 
+								unit=""
 								state="{
 									path: 'UnitsInStock',
 									formatter: '.formatter.quantityState'
@@ -127,7 +130,7 @@
 		</semantic:positiveAction>
 		 -->
 		<semantic:negativeAction>
-			<semantic:NegativeAction text="{i18n>TableProductsUnlist}" press="onUnlistObjects"/>
+			<semantic:NegativeAction text="Удалить" press="onUnlistObjects"/>
 		</semantic:negativeAction>
 	</semantic:FullscreenPage>
 </mvc:View>

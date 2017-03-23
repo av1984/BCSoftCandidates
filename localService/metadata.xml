@@ -10,6 +10,7 @@
 				<Property Name="CandidateID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
 				<Property Name="CandidateName" Type="Edm.String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
 				<Property Name="DirectionID" Type="Edm.Int32" Nullable="true" />
+				<Property Name="DirectionName" Type="Edm.String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
 				<Property Name="UnitPrice" Type="Edm.Decimal" Nullable="true" Precision="19" Scale="4" />
 				<Property Name="UnitsInStock" Type="Edm.Int16" Nullable="true" />
 				<Property Name="UnitsOnOrder" Type="Edm.Int16" Nullable="true" />

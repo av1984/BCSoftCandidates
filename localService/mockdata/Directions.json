@@ -1,7 +1,7 @@
 [
   {
     "SupplierID": 1,
-    "CompanyName": "OpenText",
+    "DirectionName": "OpenText",
     "ContactName": "Shelley Burke",
     "ContactTitle": "Order Administrator",
     "Address": "P.O. Box 78934",
@@ -12,7 +12,7 @@
   },
   {
     "SupplierID": 2,
-    "CompanyName": "ABAP",
+    "DirectionName": "ABAP",
     "ContactName": "Charlotte Cooper",
     "ContactTitle": "Purchasing Manager",
     "Address": "49 Gilbert St.",
@@ -23,7 +23,7 @@
   },
   {
     "SupplierID": 3,
-    "CompanyName": "BI",
+    "DirectionName": "BI",
     "ContactName": "Regina Murphy",
     "ContactTitle": "Sales Representative",
     "Address": "707 Oxford Rd.",
@@ -34,7 +34,7 @@
   },
   {
     "SupplierID": 4,
-    "CompanyName": "other",
+    "DirectionName": "other",
     "ContactName": "Chantal Goulet",
     "ContactTitle": "Accounting Manager",
     "Address": "148 rue Chasseur",
@@ -45,7 +45,7 @@
   },
   {
     "SupplierID": 5,
-    "CompanyName": "OpenText",
+    "DirectionName": "OpenText",
     "ContactName": "Martin Bein",
     "ContactTitle": "International Marketing Mgr.",
     "Address": "Bogenallee 51",
@@ -56,7 +56,7 @@
   },
   {
     "SupplierID": 6,
-    "CompanyName": "ABAP",
+    "DirectionName": "ABAP",
     "ContactName": "Niels Petersen",
     "ContactTitle": "Sales Manager",
     "Address": "Lyngbysild Fiskebakken 10",
@@ -67,7 +67,7 @@
   },
   {
     "SupplierID": 7,
-    "CompanyName": "BI",
+    "DirectionName": "BI",
     "ContactName": "Elio Rossi",
     "ContactTitle": "Sales Representative",
     "Address": "Viale Dante, 75",
