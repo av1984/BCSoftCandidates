@@ -96,8 +96,8 @@
 				},
 				{
 					"pattern": "Candidates/{objectId}",
-					"name": "object",
-					"target": "object"
+					"name": "candidate",
+					"target": "candidate"
 				}
 			],
 			"targets": {
@@ -106,9 +106,9 @@
 					"viewId": "candidatelist",
 					"viewLevel": 1
 				},
-				"object": {
-					"viewName": "Object",
-					"viewId": "object",
+				"candidate": {
+					"viewName": "Candidate",
+					"viewId": "candidate",
 					"viewLevel": 2
 				},
 				"objectNotFound": {
