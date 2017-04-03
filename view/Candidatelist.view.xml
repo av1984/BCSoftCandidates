@@ -88,7 +88,7 @@
         				<Text text="Направление"/>
     				</Column>
 
-					<Column id="unitsInStockColumn"
+					<Column id="SuitabilityColumn"
             			hAlign="Right">
         				<Text text="Соответствие"/>
     				</Column>
@@ -105,12 +105,12 @@
 							<!-- unit="ч." -->
 							<ObjectNumber
 								number="{
-									path: 'UnitsInStock',
+									path: 'Suitability',
 									formatter: '.formatter.quantityStateText'
 								}" 
 								unit=""
 								state="{
-									path: 'UnitsInStock',
+									path: 'Suitability',
 									formatter: '.formatter.quantityState'
 								}"/>
 						</cells>

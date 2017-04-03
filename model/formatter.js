@@ -33,7 +33,6 @@ sap.ui.define([
 			} else {
 				return ValueState.Warning;
 			}
-
         },
 		
 		quantityStateText: function(iValue) {

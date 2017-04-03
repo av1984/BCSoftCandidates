@@ -54,9 +54,9 @@ sap.ui.define([
 
 			// Create an object of filters
 			this._mFilters = {
-				"Fail": [new sap.ui.model.Filter("UnitsInStock", "EQ", 0)],
-				"Doubt": [new sap.ui.model.Filter("UnitsInStock", "EQ", 1)],
-				"Ready": [new sap.ui.model.Filter("UnitsInStock", "EQ", 2)],
+				"Fail": [new sap.ui.model.Filter("Suitability", "EQ", 0)],
+				"Doubt": [new sap.ui.model.Filter("Suitability", "EQ", 1)],
+				"Ready": [new sap.ui.model.Filter("Suitability", "EQ", 2)],
 				"all": []
 			};
 
@@ -100,7 +100,7 @@ sap.ui.define([
 					}
 				});
 
-				// read the count for the unitsInStock filter
+				// read the count for the Suitability filter
 				this.getModel().read("/Candidates/$count", {
 					success: function (oData) {
 						oViewModel.setProperty("/inStock", oData);
@@ -314,7 +314,7 @@ sap.ui.define([
 				for (i = 0; i < aSelectedProducts.length; i++) {
 					sPath = aSelectedProducts[i].getBindingContextPath();
 					oProductObject = aSelectedProducts[i].getBindingContext().getObject();
-					oProductObject.UnitsInStock += 10;
+					oProductObject.Suitability += 10;
 					this.getModel().update(sPath, oProductObject, {
 						success : this._handleReorderActionResult.bind(this, oProductObject.CandidateID, true, i+1, aSelectedProducts.length),
 						error : this._handleReorderActionResult.bind(this, oProductObject.ProductID, false, i+1, aSelectedProducts.length)
